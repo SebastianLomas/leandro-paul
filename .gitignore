@@ -1,0 +1,5 @@
+pug/
+*.config
+src/css/icons-src/
+less/
+html/

@@ -1,0 +1,524 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+h2 {
+  font-size: 3em;
+  text-transform: capitalize;
+  text-align: center;
+  margin-bottom: 1em;
+  color: #F2F2F2;
+}
+h3 {
+  font-size: 2em;
+  font-family: 'Roboto', sans-serif;
+  text-transform: capitalize;
+}
+body {
+  font-size: 15px;
+  font-family: 'Oswald', sans-serif;
+  background-color: #262626;
+}
+section {
+  padding-top: 1em;
+}
+.bigButton {
+  width: 100%;
+  height: 3em;
+  margin-top: 1em;
+  background-color: #E84242;
+}
+.bigButton a {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.bigButton a span {
+  width: 100px;
+  display: block;
+  margin: 0 auto 1em;
+  font-size: 1.8em;
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #F2F2F2;
+}
+.header {
+  width: 100%;
+  height: auto;
+  margin-bottom: 1em;
+  background-color: #131313;
+}
+.header .header__logo {
+  width: 300px;
+  height: 40px;
+  margin: auto auto;
+  padding: 1em 0;
+}
+.header .header__logo img {
+  width: 100%;
+  height: 100%;
+}
+.header .header__navBar {
+  width: 100%;
+  height: 70px;
+  padding-bottom: 1em;
+}
+.header .header__navBar ul {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(5, 115px);
+  grid-template-rows: 60px;
+  column-gap: 25px;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+}
+.header .header__navBar ul a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #E84242;
+  border-radius: 0.5em;
+}
+.header .header__navBar ul a li {
+  list-style-type: none;
+  font-size: 2em;
+  text-transform: uppercase;
+  color: #E84242;
+}
+.musicBox {
+  width: 210px;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 5.2em 0 0 1em;
+  background-image: url("https://i.imgur.com/UUohqlP.jpg");
+  background-position: 0 0;
+  background-size: 100% 100%;
+}
+.musicBox h3 {
+  color: #F2F2F2;
+}
+.musicBox span {
+  text-transform: capitalize;
+  color: #F2F2F2;
+}
+.shopBox {
+  width: 180px;
+  height: 250px;
+  border: 1px solid #707070;
+  background-color: #EEEEEE;
+}
+.shopBox__img {
+  width: 100px;
+  height: 100px;
+  border: 1px solid #707070;
+  margin: 10px auto;
+}
+.shopBox__img div {
+  width: 100%;
+  height: 100%;
+  background-color: #F2F2F2;
+}
+.shopBox__title {
+  font-size: 1.5em;
+  text-align: center;
+}
+.shopBox__price {
+  display: block;
+  font-size: 1.3em;
+  text-align: center;
+  margin: 10px auto;
+}
+.shopBox__button {
+  width: 130px;
+  height: 45px;
+  background: #E84242;
+  margin: 0 auto;
+}
+.shopBox__button a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.shopBox__button a span {
+  text-transform: uppercase;
+  font-size: 2em;
+  font-weight: bold;
+  color: #F2F2F2;
+}
+.album {
+  width: 900px;
+  height: 300px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background-image: url("https://i.imgur.com/5BlW66j.jpg");
+  background-position: 0 0;
+  background-size: 100% 100%;
+  margin: 0 auto;
+}
+.size {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.size .size__box {
+  width: 100px;
+  height: 40px;
+  background-color: #707070;
+  text-align: center;
+  border-radius: 0.2em;
+  cursor: pointer;
+}
+.size .size__box:nth-of-type(4) {
+  background-color: #E84242;
+}
+.footer {
+  width: 100%;
+  height: 150px;
+  display: flex;
+  position: relative;
+  bottom: 0%;
+  margin-top: 1.5em;
+  padding-top: 10px;
+  box-sizing: border-box;
+  background-color: #131313;
+}
+.footer__email {
+  width: 50%;
+  height: 100%;
+  padding-left: 3%;
+  box-sizing: border-box;
+}
+.footer__email span {
+  font-size: 1em;
+  text-transform: uppercase;
+  color: #F2F2F2;
+}
+.footer__email h4 {
+  font-size: 1.8em;
+  text-transform: capitalize;
+  color: #F2F2F2;
+}
+.footer__email div {
+  width: 60%;
+  height: 3em;
+  display: flex;
+}
+.footer__email div input {
+  width: 80%;
+  height: 100%;
+  font-family: 'Arial';
+  font-size: 1.2em;
+  padding: 0.2em 0.5em;
+  border: 0;
+  box-sizing: border-box;
+}
+.footer__email div button {
+  width: 20%;
+  height: 100%;
+  border: 0;
+  background-color: #2AC96A;
+}
+.footer__email div button span {
+  font-size: 2em;
+  font-weight: bold;
+}
+.footer__socialMedia {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.footer__socialMedia i {
+  font-size: 3em;
+  color: #F2F2F2;
+}
+.recently {
+  width: 80%;
+  height: auto;
+  margin: 0 auto;
+}
+.recently__container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 210px);
+  grid-template-rows: repeat(0, 150px);
+  justify-content: center;
+  column-gap: 1em;
+  row-gap: 1em;
+}
+.shop {
+  width: 90%;
+  height: auto;
+  margin: 0 auto;
+}
+.shop__container {
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 180px);
+  justify-content: center;
+  column-gap: 1em;
+  row-gap: 1em;
+}
+.videos {
+  width: 90%;
+  height: auto;
+  margin: 0 auto;
+}
+.videos__container {
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 210px);
+  grid-template-rows: repeat(2, 150px);
+  justify-content: center;
+  column-gap: 1em;
+  row-gap: 1em;
+}
+.album {
+  padding: 0;
+}
+.album__title {
+  width: 100%;
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  box-sizing: border-box;
+  padding-left: 3.5em;
+}
+.album__title h3 {
+  color: #F2F2F2;
+}
+.album__title span {
+  font-size: 1.5em;
+  color: #F2F2F2;
+}
+.album__actions {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-end;
+  box-sizing: border-box;
+  padding-bottom: 1em;
+}
+.album__actions span {
+  font-size: 2.5em;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #F2F2F2;
+}
+.tickets {
+  width: 80%;
+  height: auto;
+  display: grid;
+  grid-template-rows: repeat(3, 340px);
+  row-gap: 1em;
+  margin: 0 auto;
+}
+.tickets .ticket {
+  width: 100%;
+  height: 300px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background-color: #F2F2F2;
+}
+.tickets .ticket .ticket__name {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5em;
+  color: #E84242;
+}
+.tickets .ticket .ticket__place {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.tickets .ticket .ticket__place h3 {
+  text-align: center;
+}
+.tickets .ticket .ticket__buy {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tickets .ticket .ticket__buy a {
+  width: 120px;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #E84242;
+}
+.tickets .ticket .ticket__buy a div {
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  background-color: #F2F2F2;
+}
+.tickets .ticket .ticket__buy a span {
+  font-size: 1.5em;
+  text-transform: uppercase;
+  color: #F2F2F2;
+}
+.product {
+  width: 80%;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 0 auto;
+  padding: 2.1em 0;
+}
+.product__img {
+  width: 250px;
+  height: 250px;
+  margin: auto;
+  border-radius: 1em;
+  background-color: #F2F2F2;
+}
+.product__info {
+  width: 100%;
+  height: 100%;
+}
+.product__info h1 {
+  width: 250px;
+  margin: 0 auto 0.5em;
+  font-size: 2.5em;
+  text-align: center;
+  color: #F2F2F2;
+}
+.product__info span {
+  width: 100px;
+  display: block;
+  margin: 0 auto 1em;
+  font-size: 1.8em;
+  text-align: center;
+  color: #F2F2F2;
+}
+.fullSection {
+  width: 80%;
+  height: auto;
+  margin: 0 auto;
+}
+.fullSection .shop {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 180px);
+  grid-template-rows: repeat(3, 250px);
+  gap: 1em;
+  justify-content: center;
+}
+.form {
+  width: 80%;
+  height: auto;
+  margin: 0 auto;
+}
+.form__img {
+  width: 30%;
+  height: auto;
+}
+.form__img img {
+  width: 100%;
+}
+.form__instruction {
+  font-family: 'Arial';
+  font-size: 1.5em;
+  text-transform: capitalize;
+  text-align: center;
+  margin-bottom: 1em;
+  color: #F2F2F2;
+}
+.form__form {
+  width: 80%;
+  height: auto;
+  margin: 0 auto;
+  display: grid;
+  grid-template-rows: repeat(5, 40px);
+  row-gap: 1em;
+  justify-items: center;
+}
+.form__form input {
+  width: 50%;
+  height: 100%;
+  font-family: 'Arial';
+  font-size: 1.3em;
+  box-sizing: border-box;
+  padding: 0.2em 0.5em;
+}
+.form__form .form__form--date {
+  width: 50%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 1em;
+}
+.form__form .form__form--date select,
+.form__form .form__form--date input {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+.form__form div {
+  width: 50%;
+  height: 100%;
+  margin: 0;
+}
+.greeting {
+  width: 100vw;
+  height: 100vh;
+  box-sizing: border-box;
+  padding: 100px 0 0 0;
+  background-image: url("https://i.imgur.com/5BlW66j.jpg");
+  background-position: 0% 0%;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.greeting__text {
+  width: 250px;
+  height: 200px;
+  margin-left: 150px;
+}
+.greeting__text p {
+  font-size: 1.2em;
+  color: #F2F2F2;
+}
+.greeting__author {
+  width: 350px;
+  height: auto;
+  margin: 1em 0 1em 300px;
+}
+.greeting__author h3 {
+  font-size: 1.3em;
+  font-weight: 100;
+  color: #F2F2F2;
+}
+.greeting a {
+  font-size: 1.5em;
+  text-transform: uppercase;
+  margin-left: 150px;
+  color: #F2F2F2;
+}
