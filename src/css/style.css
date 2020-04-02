@@ -563,4 +563,5 @@ section {
   height: 100%;
   position: relative;
   flex-shrink: 0;
+  transition-duration: 1s;
 }
