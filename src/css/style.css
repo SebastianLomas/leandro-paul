@@ -73,7 +73,7 @@ section {
   display: grid;
   grid-template-columns: repeat(5, minmax(70px, 115px));
   grid-template-rows: minmax(30px, 60px);
-  column-gap: 1%;
+  column-gap: 1.6em;
   justify-content: center;
   justify-items: center;
   align-items: center;
@@ -84,6 +84,7 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
+  box-sizing: border-box;
   border: 1px solid #E84242;
   border-radius: 0.5em;
 }
@@ -158,7 +159,7 @@ section {
   color: #F2F2F2;
 }
 .album {
-  width: 900px;
+  width: 90%;
   height: 300px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -175,12 +176,17 @@ section {
   align-items: center;
 }
 .size .size__box {
-  width: 100px;
+  width: 20%;
   height: 40px;
   background-color: #707070;
   text-align: center;
   border-radius: 0.2em;
   cursor: pointer;
+}
+.size .size__box span {
+  width: 100%;
+  height: 100%;
+  display: block;
 }
 .size .size__box:nth-of-type(4) {
   background-color: #E84242;
@@ -427,8 +433,7 @@ section {
   width: 100%;
   height: 100%;
   display: grid;
-  grid-template-columns: repeat(4, 180px);
-  grid-template-rows: repeat(3, 250px);
+  grid-template-columns: repeat(auto-fill, 180px);
   gap: 1em;
   justify-content: center;
 }
@@ -461,8 +466,9 @@ section {
   row-gap: 1em;
   justify-items: center;
 }
-.form__form input {
-  width: 50%;
+.form__form input,
+.form__form select {
+  width: 80%;
   height: 100%;
   font-family: 'Arial';
   font-size: 1.3em;
@@ -470,7 +476,7 @@ section {
   padding: 0.2em 0.5em;
 }
 .form__form .form__form--date {
-  width: 50%;
+  width: 80%;
   height: 100%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -483,7 +489,7 @@ section {
   border: 0;
 }
 .form__form div {
-  width: 50%;
+  width: 80%;
   height: 100%;
   margin: 0;
 }
@@ -565,8 +571,8 @@ section {
   flex-shrink: 0;
   transition-duration: 1s;
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 800px) {
   body {
-    font-size: 10px;
+    font-size: 12px;
   }
 }
