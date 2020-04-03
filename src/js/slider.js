@@ -11,7 +11,6 @@ $rightArrow.addEventListener("click",()=>{
     if(move < maxLimit) {
         move += sliderImgWidth;
             $sliderImg.forEach(img =>{
-                debugger
                 img.style.left = `-${move}px`
             })
     }

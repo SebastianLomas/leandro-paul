@@ -94,6 +94,9 @@ section {
   text-transform: uppercase;
   color: #E84242;
 }
+.header .header__navBar--mobile {
+  display: none;
+}
 .musicBox {
   width: 210px;
   height: 150px;
@@ -252,6 +255,9 @@ section {
 .footer__socialMedia i {
   font-size: 3em;
   color: #F2F2F2;
+}
+.footer__close {
+  display: none;
 }
 .recently {
   width: 80%;
@@ -574,5 +580,129 @@ section {
 @media screen and (max-width: 800px) {
   body {
     font-size: 12px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .header__navBar {
+    display: none;
+  }
+  .nav__Button {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 15%;
+    left: 2em;
+    border-radius: 100%;
+    z-index: 10;
+    cursor: pointer;
+    background-color: #131313;
+  }
+  .nav__Button span {
+    font-size: 1.5em;
+    text-transform: uppercase;
+    color: #F2F2F2;
+  }
+  .footer {
+    position: fixed;
+  }
+  .footer .footer__email {
+    width: 80%;
+  }
+  .footer .footer__socialMedia {
+    display: none;
+  }
+  .footer__close {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #E84242;
+    border-radius: 100%;
+    position: absolute;
+    left: calc(100% - 50px);
+    top: -15px;
+    z-index: 98;
+    cursor: pointer;
+    background-color: #131313;
+  }
+  .footer__close span {
+    font-size: 2em;
+    font-weight: bolder;
+    color: #E84242;
+  }
+}
+.navMobile {
+  width: 100vw;
+  height: 100vh;
+  display: none;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 99;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.navMobile .navMobile__bar {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-rows: repeat(7, 1fr);
+  column-gap: 1em;
+  text-align: center;
+  margin: auto;
+}
+.navMobile .navMobile__bar .navMobile__back {
+  width: 50%;
+  height: 100%;
+  cursor: pointer;
+}
+.navMobile .navMobile__bar .navMobile__back span {
+  font-size: 5em;
+  color: #F2F2F2;
+}
+.navMobile .navMobile__bar a {
+  display: block;
+  width: 50%;
+  height: 100%;
+  margin: auto;
+}
+.navMobile .navMobile__bar a li {
+  font-size: 3em;
+  font-weight: bold;
+  text-transform: capitalize;
+  list-style-type: none;
+  color: #F2F2F2;
+}
+.navMobile .navMobile__bar .navMobile__footer {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 1em;
+}
+.navMobile .navMobile__bar .navMobile__footer i {
+  font-size: 5em;
+  line-height: 100%;
+  color: #F2F2F2;
+}
+.nav__Button {
+  display: none;
+}
+.showMenu-animation {
+  animation-name: show;
+  animation-duration: 1s;
+}
+@keyframes show {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0%);
   }
 }

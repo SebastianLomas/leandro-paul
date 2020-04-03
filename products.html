@@ -9,7 +9,19 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <title>Leandro Paul</title>
   </head>
-  <body>
+  <body id="body">
+    <nav class="navMobile" id="navMobile">
+      <ul class="navMobile__bar">
+        <div class="navMobile__back" id="navBackButton"><span>&lt</span></div><a href="/">
+          <li>home</li></a><a href="videos.html">
+          <li>videos</li></a><a href="shop.html">
+          <li>shop</li></a><a href="albums.html">
+          <li>albums</li></a><a href="events.html">
+          <li>events</li></a>
+        <footer class="navMobile__footer"><i class="icon-facebook2"></i><i class="icon-instagram"></i><i class="icon-twitter"></i><i class="icon-youtube"></i></footer>
+      </ul>
+    </nav>
+    <div class="nav__Button" id="navButton"><span>Menu</span></div>
     <header class="header">
       <div class="header__logo"><img src="https://i.imgur.com/ihZnJ9L.png" alt="Leandro Paul Logo"></div>
       <nav class="header__navBar">
@@ -97,7 +109,9 @@
         </article>
       </div>
     </section>
-    <footer class="footer">
+    <script src="src/js/menuMobile.js"></script>
+    <script src="src/js/mobile.js"></script>
+    <footer class="footer" id="footer">
       <div class="footer__email"><span>subscribe for special offers</span>
         <h4>email:</h4>
         <div>
@@ -106,6 +120,7 @@
         </div>
       </div>
       <div class="footer__socialMedia"><i class="icon-facebook2"></i><i class="icon-instagram"></i><i class="icon-twitter"></i><i class="icon-youtube"></i></div>
+      <div class="footer__close" id="footerCloseButton"><span>X</span></div>
     </footer>
   </body>
 </html>
