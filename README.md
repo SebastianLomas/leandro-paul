@@ -1,4 +1,4 @@
-# Template Page For A Ficticial
+# Template Page For A Ficticial Artist
 Welcome to this repository. This is just a practice.
 In this project i used:
 1. HTML.
