@@ -50,6 +50,15 @@ section {
   .product {
     grid-template-columns: repeat(2, 1fr);
   }
+  .greeting__text {
+    margin-left: 150px;
+  }
+  .greeting__author {
+    margin: 1em 0 1em 300px;
+  }
+  .greeting a {
+    margin-left: 150px;
+  }
 }
 @media screen and (min-width: 601px) {
   .nav__Button {
@@ -75,6 +84,11 @@ section {
 @media screen and (max-width: 650px) {
   .product {
     grid-template-rows: repeat(2, 1fr);
+  }
+  .greeting__text,
+  .greeting__author,
+  .greeting a {
+    margin-left: 1em;
   }
 }
 @media screen and (max-width: 600px) {
@@ -538,7 +552,7 @@ section {
   justify-content: center;
 }
 .form {
-  width: 80%;
+  width: 90%;
   height: auto;
   margin: 0 auto;
 }
@@ -558,7 +572,7 @@ section {
   color: #F2F2F2;
 }
 .form__form {
-  width: 80%;
+  width: 100%;
   height: auto;
   margin: 0 auto;
   display: grid;
@@ -606,7 +620,6 @@ section {
 .greeting__text {
   width: 250px;
   height: 200px;
-  margin-left: 150px;
 }
 .greeting__text p {
   font-size: 1.2em;
@@ -615,7 +628,6 @@ section {
 .greeting__author {
   width: 350px;
   height: auto;
-  margin: 1em 0 1em 300px;
 }
 .greeting__author h3 {
   font-size: 1.3em;
@@ -625,7 +637,6 @@ section {
 .greeting a {
   font-size: 1.5em;
   text-transform: uppercase;
-  margin-left: 150px;
   color: #F2F2F2;
 }
 .slider {
@@ -680,6 +691,7 @@ section {
   align-items: center;
   position: fixed;
   z-index: 99;
+  overflow-y: scroll;
   background-color: rgba(0, 0, 0, 0.8);
 }
 .navMobile .navMobile__bar {
