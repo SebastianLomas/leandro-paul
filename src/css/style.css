@@ -64,6 +64,9 @@ section {
   .nav__Button {
     display: none;
   }
+  .footer__email {
+    width: 50%;
+  }
 }
 @media screen and (min-width: 531px) {
   .nav__Button {
@@ -119,6 +122,11 @@ section {
   }
   .footer .footer__email {
     width: 100%;
+    text-align: center;
+  }
+  .footer .footer__email div {
+    width: 90%;
+    margin: 0 auto;
   }
   .footer .footer__socialMedia {
     display: none;
@@ -316,7 +324,6 @@ section {
   background-color: #131313;
 }
 .footer__email {
-  width: 50%;
   height: 100%;
   padding-left: 3%;
   box-sizing: border-box;
